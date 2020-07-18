@@ -2,13 +2,31 @@ body {margin: 5;}
 
 @media screen and (max-width: 600px) {
   ul.topnav li.right, 
-  ul.topnav li {float: none;}
+  ul.topnav li {float: right;}
 } 
+@media (max-width: 800px) {
+  
+  .a {
+  margin: 5px;
+	text-align: center;
+	font-size: 1.5em;
+  }
+  .box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+ }
+
 .sidenav{
 list-style-type: none;
 overflow: hidden;
 background-color: rgb(7, 26, 199);
-border-top-width: 15px;
+border-top-width: 20px;
 padding-right: 40px;
 padding-bottom: 0px;
 margin-left: 50px;
@@ -19,26 +37,30 @@ padding-left: 0px;
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   overflow: hidden;
   background-color: rgb(7, 26, 199);
   
 }
+
 .left{
   float: left;
 }
 
 li {
-  float: left;
+  float: right;
+  
 }
 
 li a, .dropbtn {
+
   display: inline-block;
   color: white;
   text-align: left;
   padding: 16px 18px;
   text-decoration: none;
+  font-size: 18px
  
 }
 
@@ -48,7 +70,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown {
 
-  float: left;
+  float: right;
 }
 
 .dropdown-content {
@@ -74,45 +96,53 @@ li.dropdown {
   display: block;
 }
 .slide{
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 12px 16px;
   width: 100% 
+  
 }
+.center2 {
+  display: block;
+   margin-left:auto;
+   margin-right:auto;
+   width: 80%;
+   height: 80%;
+   margin-top: 15px;
+   margin-bottom: 15px;}
+
 .center {
  display: block;
   margin-left: auto;
   margin-right:auto;
   width: 80%;
   height: 40%;
-  z-index: -1;
+  z-index: -2;
+  margin-top: 15px;
+  margin-bottom: 15px;
  
 }
 
-.slider figure { 
-  width: 32%; 
-  margin-right: 1%; 
-  float: left }
-  
-.slider figure img { 
-  
+body {
+  padding: 10px;
+}
 
-  width: 100% }
+.container-box {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header header header header'
-      'menu main main main right right'
-      'menu footer footer footer footer footer';
-    grid-gap: 10px;
-    background-color: white;
-    padding: 50px;
-  
-  
- 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.a {
+  width: calc((100%/3) - (var(--margin)* 2));
+}
 
-  
+
+.box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
